@@ -1,4 +1,4 @@
-from fabric.api import local
+from fabric.api import *
 
 def test():
     print("Hello test")
