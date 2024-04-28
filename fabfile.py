@@ -1,13 +1,19 @@
-def test():
-    print("Hello test")
+from fabric.api import *
 
-def commit():
-    print("Hello commit")
+def pull_code():
+    print("pulll_code")
 
-def push():
-    print("Hello push")
+def build():
+     print("build")
 
-def prepare_deploy():
-    test()
-    commit()
-    push()
+def restart(service):
+    print("restart")
+
+def deploy(sub_dir, service):
+     print("deploy")
+
+def deploy_staging():
+     print("deploy_staging")
+
+def deploy_prod():
+    print("deploy_prod")
