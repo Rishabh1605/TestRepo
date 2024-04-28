@@ -1,5 +1,3 @@
-from fabric.api import *
-
 def test():
     print("Hello test")
 
