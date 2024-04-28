@@ -2,23 +2,28 @@ import sys
 import os
 import json
 
-from fabric import *
+from fabric import task
 
-def pull_code():
+@task
+def pull_code(c):
     print("pulll_code")
 
-def build():
-     print("build")
+@task
+def build(c):
+    print("build")
 
-def restart(service):
+@task
+def restart(c, service):
     print("restart")
 
-def deploy(sub_dir, service):
-     print("deploy")
+@task
+def deploy(c, sub_dir, service):
+    print("deploy")
 
-def deploy_staging():
-     print("deploy_staging")
+@task
+def deploy_staging(c):
+    print("deploy_staging")
 
-def deploy_prod():
+@task
+def deploy_prod(c):
     print("deploy_prod")
-
