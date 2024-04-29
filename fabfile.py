@@ -4,9 +4,5 @@ import os
 from fabric import Connection, task
 
 @task
-def deploy_prod():
+def run_docker(ctx):
    print("deploy_prod")
-
-@task
-def deploy_staging():
-   print("deploy_staging")
